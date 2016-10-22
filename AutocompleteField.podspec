@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "AutocompleteField"
-  s.version      = "1.1"
+  s.version      = "2.0"
   s.summary      = "Add word completion to your UITextFields."
 
   s.homepage     = "http://iosdev.io/autocompletefield"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :git => "https://github.com/filipstefansson/AutocompleteField.git", :tag => "1.1" }
+  s.source       = { :git => "https://github.com/KaterynaZaikina/AutocompleteField.git", :tag => "1.1" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "AutocompleteField/**/*.swift"
