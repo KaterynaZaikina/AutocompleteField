@@ -192,7 +192,8 @@ public enum AutocompleteType {
         {
             attributedString.addAttribute(NSForegroundColorAttributeName,
                                           value: UIColor.clear,
-                                          range: NSRange(location:0, length:inputText.characters.count)
+                                          range: NSRange(location:0,
+                                                         length: NSMutableAttributedString(string: inputText).length)
             )
         }
 
