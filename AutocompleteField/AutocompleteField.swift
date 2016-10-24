@@ -212,7 +212,7 @@ public enum AutocompleteType {
         for suggestion in self.suggestions {
             // Search the suggestion array. User lowercase on both to get a match.
             // Also, if the match is exact we move on.
-            if suggestion != searchTerm && suggestion.lowercased().hasPrefix(searchTerm.lowercased()) {
+            if suggestion != searchTerm && suggestion.lowercased().hasPrefix(searchTerm.lowercased()) && !searchTerm.isEmpty {
                 var suggestionToReturn = searchTerm
 
                 let range = Range<String.Index>(suggestion.index(suggestion.startIndex, offsetBy: searchTerm.characters.count)..<suggestion.endIndex)
