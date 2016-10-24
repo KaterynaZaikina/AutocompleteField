@@ -163,7 +163,7 @@ public enum AutocompleteType {
         if(self.autocompleteType == .Word)
         {
             let words = self.text!.components(separatedBy: " ")
-            let suggestionWords = self.text!.components(separatedBy: " ")
+            let suggestionWords = text.components(separatedBy: " ")
             var string : String = ""
             for i in 0 ..< words.count
             {
